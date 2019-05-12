@@ -73,6 +73,41 @@ li {
     background-color: #6c8f6d;
 }
 
+#wrap {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:30%;
+}
+
+.farve {
+    height: 150px;
+    width: 150px;
+    margin:50px;
+    box-shadow: 5px 5px 5px 5px #333333;
+}
+
+#darkgreen {
+    background-color: #6c8f6d;
+}
+
+#yellow {
+    background-color: #f2be50;
+}
+
+#lightgreen {
+    background-color: #d7d6b1;
+}
+
+#white {
+    background-color: #ffffff;
+}
+
+#darkgrey {
+    background-color: #333333;
+}
+
 #side3 {
     background-color: #f2be50;
 }
