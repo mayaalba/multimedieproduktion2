@@ -12,10 +12,9 @@
     
     <body>
         
-        <nav>
-            
+        <div class="sidenav">
             <ul>
-                <img class="logo" src="images/logo.png" alt="logo">
+                <img class="logostyle" src="images/logo.png" alt="logo">
                 <li><a href="#side1">Styleguide</a></li>
                 <li><a href="#side2">Farver</a></li>
                 <li><a href="#side3">Typografi</a></li>
@@ -26,45 +25,176 @@
                 <li><a href="#side8">Footer</a></li>
                 <li><a href="#side9">Form</a></li>
             </ul>
-        </nav>
+        </div>
         
         <div class="side" id="side1">
             <div class="boxline">
-                <h1><span class="mindre">Styleguide for </span><br> Lunde By</h1>
+                <h1 id="h1styleguide"><span class="mindre">Styleguide for </span><br> Lunde By</h1>
             </div>
             
         </div>
         
         <div class="side" id="side2">
-        
+            <h1 class="h1styleguide">Farver</h1>
+            <div id="wrap">
+                <div class="farve" id="darkgreen"><p class="hex">#6c8f6d</p></div>
+                <div class="farve" id="yellow"><p class="hex">#f2be50</p></div>
+                <div class="farve" id="lightgreen"><p class="hex">#d7d6b1</p></div>
+                <div class="farve" id="white"><p class="hex">#ffffff</p></div>
+                <div class="farve" id="darkgrey"><p class="hex">#333333</p></div> 
+            </div>
         </div>
         
         <div class="side" id="side3">
-        
+            <h1 class="h1styleguide">Typografi</h1>
+            <div id="typografi">
+                <h1>Dette er en overskrift</h1>
+                <code>
+                    &lt;h1&gt;Dette er en overskrift&lt;/h1&gt;
+                </code>
+                <br><br>
+                <h2>Dette er en overskrift</h2>
+                <code>
+                    &lt;h2&gt;Dette er en overskrift&lt;/h2&gt;
+                </code>
+                <br><br>
+                <h3>Dette er en overskrift</h3>
+                <code>
+                    &lt;h3&gt;Dette er en overskrift&lt;/h3&gt;
+                </code>
+                <br><br>
+                <p>ABCDEFGHIJKLMNOPQRSTUVXYZÆØÅ</p> <code>&lt;p&gt;ABCDEFGHIJKLMNOPQRSTUVXYZÆØÅ&lt;/p&gt;
+                </code>
+                <br><br>
+                <p class="boldp">ABCDEFGHIJKLMNOPQRSTUVXYZÆØÅ</p>
+                <code>&lt;p class="boldp"&gt;ABCDEFGHIJKLMNOPQRSTUVXYZÆØÅ&lt;/p&gt;
+                </code>
+                <br><br>
+                <p class="centerp">ABCDEFGHIJKLMNOPQRSTUVXYZÆØÅ</p>
+                <code>&lt;p class="centerp"&gt;ABCDEFGHIJKLMNOPQRSTUVXYZÆØÅ&lt;/p&gt;
+                </code>
+                <br><br>
+                <p class="hvidp">ABCDEFGHIJKLMNOPQRSTUVXYZÆØÅ</p>
+                <code>&lt;p class="hvidp"&gt;ABCDEFGHIJKLMNOPQRSTUVXYZÆØÅ&lt;/p&gt;
+                </code>
+            </div>
         </div>
         
         <div class="side" id="side4">
-        
+            <h1 class="h1styleguide">Ikoner</h1>
+            <div id="ikoner">
+                <img src="images/facebook.png" class="facebookikon" alt="facdebookikon">
+                <br>
+                <code>
+                    &lt;img src="images/facebook.png" class="facebookikon" alt="facebookikon"&gt;
+                </code>
+                <p>Facebook ikon som quick-link til Lunde Bys facebook side.</p>
+                <br><br>
+                <img src="images/search.png" class="searchikon" alt="søgeikon">
+                <br>
+                <code>
+                    &lt;img src="images/search.png" class="searchikon" alt="søgeikon"&gt;
+                </code>
+                <p>Ikon til søgefelt.</p>
+                <br><br>
+                <img src="images/close.png" class="closeikon" alt="closeikon">
+                <br>
+                <code>
+                    &lt;img src="images/close.png" class="closeikon" alt="closeikon"&gt;
+                </code>
+                <p>Ikon til at lukke modal ved klik på nyhedsopslag.</p>
+            </div>
         </div>
     
         <div class="side" id="side5">
-        
+            <h1 class="h1styleguide">Knapper</h1>
+            <div class="knapper">
+                <btn class="imagebtn">
+                    Musik på kroen
+                </btn>
+                <br>
+                <code>
+                    &lt;btn class="imagebtn"&gt;Musik på kroen&lt;/btn&gt;
+                </code>
+                <br><br>
+                <btn class="merebtn">
+                    Læs mere
+                </btn>
+                <br>
+                <code>
+                &lt;btn class="merebtn"&gt;Læs mere&lt;/btn&gt;
+                </code>
+            </div>
         </div>
         
         <div class="side" id="side6">
-        
+            <h1 class="h1styleguide">Billeder</h1>
+            <div class="billeder">
+                <img src="images/forside.png" class="bigimg" alt="lundebybillede">
+                <br>
+                <code>
+                    &lt;img src="images/forside.png" class="bigimg" alt="lundebybillede"&gt;
+                </code>
+                <br><br>
+                <div class="row">
+                    <img src="images/img1.png" class="column" alt="billede">
+                    <img src="images/img2.png" class="column" alt="billede">
+                    <img src="images/img3.png" class="column" alt="billede">
+                </div>
+                <br>
+                <code>
+                    &lt;div class="row"&gt;
+                        &lt;img src="images/img1.png" class="column" alt="billede"&gt;
+                        &lt;img src="images/img2.png" class="column" alt="billede"&gt;
+                        &lt;img src="images/img3.png" class="column" alt="billede"&gt;
+                    &lt;/div&gt;
+                </code>
+            </div>
         </div>
         
         <div class="side" id="side7">
-        
+            <h1 class="h1styleguide">Navigation</h1>
+            <div class="navigation">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <a href="#Forside" class="navlink">Forside</a>
+                    <a href="#OmLunde" class="navlink">Om Lunde</a>
+                    <a href="#Ledigeboliger" class="navlink">Ledige boliger</a>
+                    <a href="#Kalender" class="navlink">Kalender</a>
+                    <a href="#Kulturliv" class="navlink">Kulturliv</a>
+                    <img src="images/search.png" class="searchikon" id="searchnav" alt="søgeikon">
+                </nav>
+            </div>
+            
         </div>
         
         <div class="side" id="side8">
-        
+            <h1 class="h1styleguide">Footer</h1>
+            <div class="footer">
+                <footer>
+                    <div class="column">
+                        <p class="hvidp">
+                        Send nyheder og aktiviteter til piasechersnews@gmail.com
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p class="hvidp">
+                        6800 Nr. Nebel
+                        <br>
+                        Lunde By
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p class="hvidp">
+                        Følg os på Facebook
+                        </p>
+                    </div>
+                </footer>
+            </div>
         </div>
         
         <div class="side" id="side9">
-        
+            <h1 class="h1styleguide">Form</h1>
         </div>
     
     </body>
