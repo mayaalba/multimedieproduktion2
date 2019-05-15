@@ -1,0 +1,359 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Opens Sans', sans-serif;
+    color: #333333;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6c8f6d;
+    font-weight:bold;
+}
+
+#h1styleguide {
+    font-size: 150px;
+    text-align:center;
+    margin:0;
+    padding:5%;
+    background-color: #d7d6b1
+}
+
+.h1styleguide {
+    text-align: center;
+    background-color: #f2be50;
+}
+
+.boxline {
+    height: 55%;
+    width: 60%;
+    margin-left:25%;
+    border: #ffffff solid 5px;
+}
+
+.mindre {
+    font-size: 70px;
+}
+
+.logostyle {
+    width:200px;
+    margin-left:10%;
+    margin-top:20px;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:250px;
+    position: fixed;
+    background-color: #d7d6b1;
+    font-family: 'Open Sans';
+    font-size:25px;
+    box-shadow: 5px 5px 5px;
+}
+
+li {
+    display:block;
+    width:230px;
+    margin:10px;
+    margin-left:50px;
+}
+
+.side {
+    height:900px;
+    width:100%;
+    padding-top:50px;
+}
+
+#side1 {
+    background-color: #d7d6b1;
+    
+}
+
+#wrap {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:30%;
+}
+
+/* FARVER */
+.farve {
+    height: 150px;
+    width: 150px;
+    margin:50px;
+    box-shadow: 5px 5px 5px 5px #333333;
+}
+
+#darkgreen {
+    background-color: #6c8f6d;
+}
+
+#yellow {
+    background-color: #f2be50;
+}
+
+#lightgreen {
+    background-color: #d7d6b1;
+}
+
+#white {
+    background-color: #ffffff;
+}
+
+#darkgrey {
+    background-color: #333333;
+}
+
+.hex {
+    line-height:325px;
+    text-align: center;
+}
+
+/* TYPOGRAFI */
+#typografi {
+    margin-left:30%;
+    width:50%;
+    margin-top:30px;
+}
+
+h1 {
+    font-size: 60px;
+    margin:10px;
+    background-color:#ffffff;
+    text-align: left;
+    margin:0px;
+}
+
+h2 {
+    font-size: 18px;
+    color:#ffffff;
+    background-color: #f2be50;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    text-align: left;
+}
+
+.centerp {
+    text-align: center;
+    background-color: #d7d6b1;
+}
+
+.hvidp {
+    color:white;
+    background-color: #333333;
+}
+
+/* IKONER */
+
+#ikoner {
+    width:700px;
+    margin-left: 35%;
+    margin-top:50px;
+}
+
+.facebookikon {
+    height:100px;
+    width: auto;
+    display:block;
+    margin:auto;
+}
+
+.searchikon {
+    height: 50px;
+    width: auto;
+    display:block;
+    margin:auto;
+}
+
+.closeikon {
+    height: 40px;
+    width: auto;
+    display:block;
+    margin:auto;
+}
+
+/*KNAPPER*/
+.knapper {
+    width: 700px;
+    margin-left:35%;
+    margin-top:50px;
+}
+
+.imagebtn {
+    width:175px;
+    height:50px;
+    background-color:#f2be50;
+    border: 3px solid #f2be50;
+    text-align:center;
+    line-height:50px;
+    font-weight:bold;
+    color: #ffffff;
+    display:block;
+    margin:auto;
+}
+
+.imagebtn:hover {
+    cursor:pointer;
+    background-color: #ffffff;
+    color: #f2be50;
+}
+
+.merebtn {
+    width:150px;
+    height:50px;
+    display:block;
+    margin:auto;
+    text-align: center;
+    line-height:50px;
+    font-size: 24px;
+    border: 5px solid #6c8f6d;
+}
+
+.merebtn:hover {
+    background-color: #6c8f6d;
+    cursor:pointer;
+}
+
+/*BILLEDER*/
+
+.billeder {
+    width:700px;
+    margin-left:33%;
+    margin-top: 50px;
+}
+
+.bigimg {
+    width:100%;
+    height:auto;
+}
+
+.column {
+    float:left;
+    width:27.5%;
+    display:block;
+    margin:auto;
+    margin: 20px;
+}
+
+/*NAVIGATION*/
+
+.navigation {
+    width:700px;
+    margin-left:33%;
+    margin-top:50px;
+}
+
+.logo {
+    width:10%;
+    float:left;
+    margin-right:20px;
+}
+
+.navlink {
+    display:block;
+    float: left;
+    margin:10px;
+    margin-top: 40px;
+    font-size:15px;
+}
+
+#searchnav {
+    float:left;
+    height:30px;
+    margin-top:25px;
+    margin-left:10px;
+}
+
+/*FOOTER*/
+
+.footer {
+    width:700px;
+    margin-left:33%;
+    margin-top:50px;
+}
+
+footer {
+    width:100%;
+    height:125px;
+    background-color: #333333;
+    font-size: 15px;
+}
+
+/*FORSIDE*/ 
+
+.mySlides {display:none;}
+
+.facebookLink {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #6c8f6d;    
+}
+
+#facebookIkon {
+    width: 70px;
+    margin-top: 6px;
+    margin-left: 15px;
+    float: left;
+}
+
+#foelgFa {
+    float: left;
+    margin-top: 29px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
+.nyheder {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#nyhedBillede {
+    width: 100%;
+}
+
+.nyhedsboks {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 4px;
+    background-color: #f2be50;   
+}
+
+#nyhedstekst {
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#laesmerebtn {
+    width:100px;
+    height:25px;
+    display:block;
+    float: left;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height:25px;
+    font-size: 16px;
+    border: 5px solid #6c8f6d;
+}
