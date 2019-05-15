@@ -4,6 +4,7 @@
         <title>
         Styleguide for Lunde by
         </title>
+        <link rel="icon" type="image/png" href="images/logo.png">
         <meta charset='utf-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/lunde.css">
@@ -13,7 +14,7 @@
     <body>
         
         <div class="sidenav">
-            <ul>
+            <ul class=>
                 <img class="logostyle" src="images/logo.png" alt="logo">
                 <li><a href="#side1">Styleguide</a></li>
                 <li><a href="#side2">Farver</a></li>
@@ -37,9 +38,9 @@
         <div class="side" id="side2">
             <h1 class="h1styleguide">Farver</h1>
             <div id="wrap">
-                <div class="farve" id="darkgreen"><p class="hex">#6c8f6d</p></div>
-                <div class="farve" id="yellow"><p class="hex">#f2be50</p></div>
-                <div class="farve" id="lightgreen"><p class="hex">#d7d6b1</p></div>
+                <div class="farve" id="darkgreen"><p class="hex">#254805</p></div>
+                <div class="farve" id="yellow"><p class="hex">#f3bf50</p></div>
+                <div class="farve" id="lightgreen"><p class="hex">#b3c179</p></div>
                 <div class="farve" id="white"><p class="hex">#ffffff</p></div>
                 <div class="farve" id="darkgrey"><p class="hex">#333333</p></div> 
             </div>
@@ -143,10 +144,14 @@
                 </div>
                 <br>
                 <code>
-                    &lt;div class="row"&gt;
+                    <br>
+                    &lt;div class="row"&gt;<br>
                         &lt;img src="images/img1.png" class="column" alt="billede"&gt;
+                    <br>
                         &lt;img src="images/img2.png" class="column" alt="billede"&gt;
+                    <br>
                         &lt;img src="images/img3.png" class="column" alt="billede"&gt;
+                    <br>
                     &lt;/div&gt;
                 </code>
             </div>
@@ -155,17 +160,45 @@
         <div class="side" id="side7">
             <h1 class="h1styleguide">Navigation</h1>
             <div class="navigation">
-                <nav>
-                    <img src="images/logo.png" class="logo">
-                    <a href="#Forside" class="navlink">Forside</a>
-                    <a href="#OmLunde" class="navlink">Om Lunde</a>
-                    <a href="#Ledigeboliger" class="navlink">Ledige boliger</a>
-                    <a href="#Kalender" class="navlink">Kalender</a>
-                    <a href="#Kulturliv" class="navlink">Kulturliv</a>
-                    <img src="images/search.png" class="searchikon" id="searchnav" alt="søgeikon">
+                <nav class="topnav" id="myTopnav">
+                    <a href="#hjem">
+                    <img src="images/logo.png" class="logo" alt="lundebylogo">
+                    </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="images/burgermenu-01.png" class="burgericon">
+                    </a>
+                    <a href="#home" id="indholdnav" class="link">Forside</a>
+                    <a href="#news" class="link">Om Lunde</a>
+                    <a href="#contact" class="link">Boligoverblik</a>
+                    <a href="#about" class="link" id="navnederst">Kalender</a>
                 </nav>
+                <br>
+                <code>
+                &lt;nav class="topnav" id="myTopnav"&gt;
+                    <br>
+                    &lt;a href="#hjem"&gt;
+                    <br>
+                    &lt;img src="images/logo.png" class="logo" alt="lundebylogo"&gt;
+                    <br>
+                    &lt;/a&gt;
+                    <br>
+                    &lt;a href="javascript:void(0);" class="icon onclick="myFunction()"&gt;
+                    <br>
+                    &lt;img src="images/burgermenu-01.png" class="burgericon"&gt;
+                    <br>
+                    &lt;/a&gt;
+                    <br>
+                    &lt;a href="home" id="indholdnav" class="link"&gt;Forside&lt;/a&gt;
+                    <br>
+                    &lt;a href="#news" class="link"&gt;Om Lunde&lt;/&gt;
+                    <br>
+                    &lt;a href="#contact" class="link"&gt;Boligoverblik&lt;/a&gt;
+                    <br>
+                    &lt;a href="#about" class="link id="navnederst"&gt;Kalender&lt;/a&gt;
+                    <br>
+                    &lt;/nav&gt;
+                </code>
             </div>
-            
         </div>
         
         <div class="side" id="side8">
