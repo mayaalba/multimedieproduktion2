@@ -93,15 +93,15 @@ li {
 }
 
 #darkgreen {
-    background-color: #6c8f6d;
+    background-color: #254805;
 }
 
 #yellow {
-    background-color: #f2be50;
+    background-color: #f3bf50;
 }
 
 #lightgreen {
-    background-color: #d7d6b1;
+    background-color: #b3c179;
 }
 
 #white {
@@ -256,11 +256,7 @@ p {
     margin-top:50px;
 }
 
-.logo {
-    width:10%;
-    float:left;
-    margin-right:20px;
-}
+
 
 .navlink {
     display:block;
@@ -291,3 +287,5 @@ footer {
     background-color: #333333;
     font-size: 15px;
 }
+
+/* TOPNAV */
