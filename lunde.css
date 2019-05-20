@@ -3,11 +3,17 @@ body {
     padding:0;
     font-family: 'Opens Sans', sans-serif;
     color: #333333;
+    line-height: 20px;
 }
 
 a {
     color: #333333;
     text-decoration: none;
+}
+
+main {
+    width:90%;
+    margin:auto;
 }
 
 a:hover {
@@ -125,11 +131,17 @@ a:hover {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 40px;
     margin:10px;
     background-color:#ffffff;
     text-align: left;
     margin:0px;
+}
+
+@media screen and(min-width:601px) {
+    h1 {
+        font-size:60px;
+    }
 }
 
 h2 {
@@ -144,6 +156,7 @@ h3 {
 
 p {
     text-align: left;
+    font-size: 15px;
 }
 
 .centerp {
@@ -212,6 +225,19 @@ p {
 }
 
 .merebtn {
+    width:100px;
+    height:30px;
+    display:block;
+    margin:auto;
+    text-align: center;
+    line-height:30px;
+    font-size: 15px;
+    font-weight:bold;
+    border: 3px solid #6c8f6d;
+}
+
+@media screen and (min-width:601px) {
+    .merebtn {
     width:150px;
     height:50px;
     display:block;
@@ -221,6 +247,8 @@ p {
     font-size: 24px;
     border: 5px solid #6c8f6d;
 }
+}
+
 
 .merebtn:hover {
     background-color: #6c8f6d;
@@ -288,8 +316,12 @@ footer {
 
 /* TOPNAV */
 .topnav {
-  overflow: hidden;
-  background-color: #b3c179;
+    overflow: hidden;
+    background-color: #b3c179;
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index: 1;
 }
 
 .topnav a {
@@ -337,17 +369,24 @@ footer {
   }
 }
 
-.burgericon {
-    width:50px;
-    float:right;
-    margin-top:10px;
-}
-
 .logo {
-    width:60px;
+    height:60px;
     padding:0;
     margin:0;
     float:left;
+}
+
+.burgericon {
+    width:50px;
+    float:right;
+    margin-top:8px;
+}
+
+.searchikonnav {
+    height:38px;
+    margin-top:27px;
+    margin-left:20px;
+    float:right;
 }
 
 #indholdnav {
@@ -370,4 +409,119 @@ footer {
     #navnnederst {
         margin-bottom: 0px;
     }
+}
+
+/* KALENDER */
+
+#h1kal {
+    margin-top:120px;
+    margin-bottom:30px;
+}
+
+#calendar-container {
+    width:100%;
+    border: 2px solid #333333;
+    display:block;
+    margin:auto;
+    margin-top:20px;
+    list-style-type: none;
+}
+
+.month {
+    width:100%;
+    text-align: center;
+}
+
+.month ul {
+    margin-top:20;
+    padding:0;
+    list-style-type: none;
+}
+
+.month ul li {
+    font-size:20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .foer {
+    float: left;
+    padding:10px;
+}
+
+.month .naeste {
+    float:right;
+    padding:10px;
+}
+
+.ugedage {
+    margin:0;
+    padding:4px;
+    font-size:15px;
+    border-bottom: 1px solid #333333;
+}
+
+.ugedage li {
+    display: inline-block;
+    width:13%;
+    text-align:center;
+}
+
+.dage {
+    padding: 10px 0;
+    margin:0;
+    list-style-type: none;
+}
+
+.dage li {
+    display: inline-block;
+    width:13%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:15px;
+}
+
+.addevent {
+    float:right;
+    margin:10px;
+    margin-top:3px;
+    margin-bottom:25px;
+    margin-right:0px;
+    display: block;
+}
+
+.eventcont {
+    position:relative;
+}
+
+.imgkal {
+    width:100%;
+    margin:auto;
+    display:block;
+}
+
+.textevent {
+    position:absolute;
+    bottom:0px;
+    background-color: #f3bf50;
+    width:100%;
+    height: 15%;
+    font-weight: bold;
+    color:#ffffff;
+    line-height: 25px;
+}
+
+.h2kal {
+    padding-right:10px;
+    text-align: right;
+}
+
+.pkal {
+    margin-top:7px;
+    margin-bottom:7px;
+}
+
+#merebtnkal {
+    float:left;
+    margin-bottom: 25px;
 }
