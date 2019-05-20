@@ -3,6 +3,12 @@ body {
     padding:0;
     font-family: 'Opens Sans', sans-serif;
     color: #333333;
+    line-height: 20px;
+}
+
+main {
+    width:80%;
+    margin:auto;
 }
 
 a {
@@ -124,6 +130,11 @@ a:hover {
     margin-top:30px;
 }
 
+h{
+    font-size: 20px;
+    color: #254805; 
+}
+
 h1 {
     font-size: 60px;
     margin:10px;
@@ -144,6 +155,7 @@ h3 {
 
 p {
     text-align: left;
+    font-size: 15px; 
 }
 
 .centerp {
@@ -241,11 +253,11 @@ p {
 }
 
 .column {
-    float:left;
-    width:27.5%;
+    float: left;
+    text-align: center;
+    width:30%;
     display:block;
-    margin:auto;
-    margin: 20px;
+    margin: 21px;
 }
 
 /*NAVIGATION*/
@@ -370,4 +382,107 @@ footer {
     #navnnederst {
         margin-bottom: 0px;
     }
+}
+
+/* Om Lunde */
+.tekstboks{
+}
+
+.video1{
+    width: 100%; 
+}
+.video2{
+   width: 100%;
+}
+
+.colorboks{
+    height: 160px;
+    background-color: #b3c179;
+}
+
+.lundesudvikling{
+    text-align: center;
+}
+
+@media screen and (min-width:601px) {
+    .tekstboks{
+}
+
+.video1{
+    float: right;
+    width: 50%; 
+}
+.video2{
+    float: right;
+    width: 50%; 
+}
+
+.colorboks{
+    height: 400px;
+    background-color: #b3c179;
+}
+
+.lundesudvikling{
+    text-align: center;
+}
+}
+
+/* Overlay*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b3c179;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.overlayContent {
+    position: relative;
+    top: 100px;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.overlay a {
+    padding-left: 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #254805;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    font-size: 50px;
+    cursor: pointer;
+    float: right;
+}
+
+.navText {
+    font-size: 20px;
+    color: #4C4D4F;
+    padding-bottom: 8px;
+}
+
+.kalenderboks{
+    width: 40px;
+    height: 40px;
+    background-color: #254805;
+    float: right;
+}
+
+.forside{
+    width: 21px;
+    float: left;
+    padding-right: 25px;
+    padding-left: 5px;
+    
 }
