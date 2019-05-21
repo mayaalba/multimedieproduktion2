@@ -3,6 +3,7 @@ body {
     padding:0;
     font-family: 'Opens Sans', sans-serif;
     color: #333333;
+    line-height: 20px;
 }
 
 a {
@@ -10,9 +11,13 @@ a {
     text-decoration: none;
 }
 
+main {
+    width:90%;
+    margin:auto;
+}
+
 a:hover {
     color: #6c8f6d;
-    font-weight:bold;
 }
 
 #h1styleguide {
@@ -124,12 +129,23 @@ a:hover {
     margin-top:30px;
 }
 
+h{
+    font-size: 25px;
+    color: #254805;
+}
+
 h1 {
-    font-size: 60px;
+    font-size: 40px;
     margin:10px;
     background-color:#ffffff;
     text-align: left;
     margin:0px;
+}
+
+@media screen and(min-width:601px) {
+    h1 {
+        font-size:60px;
+    }
 }
 
 h2 {
@@ -144,6 +160,7 @@ h3 {
 
 p {
     text-align: left;
+    font-size: 15px;
 }
 
 .centerp {
@@ -154,6 +171,12 @@ p {
 .hvidp {
     color:white;
     background-color: #333333;
+}
+
+@media only screen and (min-width:601px) {
+    .hvidp {
+        text-align:center;
+    }
 }
 
 /* IKONER */
@@ -212,19 +235,33 @@ p {
 }
 
 .merebtn {
-    width:150px;
-    height:50px;
+    width:90px;
+    height:30px;
     display:block;
     margin:auto;
     text-align: center;
-    line-height:50px;
-    font-size: 24px;
-    border: 5px solid #6c8f6d;
+    line-height:30px;
+    font-size: 15px;
+    border: 3px solid #254805;
+    font-weight: bold;
+}
+
+@media screen and (min-width:601px) {
+    .merebtn {
+    width:110px;
+    height:35px;
+    display:block;
+    margin:auto;
+    text-align: center;
+    line-height:36px;
+    font-size: 16px;
+}
 }
 
 .merebtn:hover {
-    background-color: #6c8f6d;
+    background-color: #254805;
     cursor:pointer;
+    color: #ffffff;
 }
 
 /*BILLEDER*/
@@ -281,15 +318,138 @@ p {
 
 footer {
     width:100%;
-    height:125px;
     background-color: #333333;
     font-size: 15px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width:601px) {
+    footer {
+        height:100px;
+    }
+}
+
+.column1 {
+    width:100%;
+    height:50px;
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:601px) {
+    .column1 {
+        width:33.33%;
+        height:20%;
+        float:left;
+        margin-bottom:0;
+        height:100px;
+        text-align:center;
+    }
+}
+
+#mailikonfoot {
+    height:20px;
+    margin:10px;
+    margin-left:20px;
+    margin-top:15px;
+    float:left;
+}
+
+@media only screen and (min-width:601px) {
+    #mailikonfoot {
+        float:none;
+        margin:auto;
+        display:block;
+        height:35px;
+    }
+}
+
+.column2 {
+    width:100%;
+    height:50px;
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:601px) {
+    .column2 {
+        width:33.33%;
+        float:left;
+        margin-bottom:0;
+        height:100px;
+    }
+}
+
+#mapikonfoot {
+    height:35px;
+    margin:10px;
+    margin-left: 26px;
+    float: left;
+}
+
+@media only screen and (min-width:601px) {
+    #mapikonfoot {
+        float:none;
+        margin:auto;
+        display:block;
+    }
+}
+
+.column3 {
+    width:100%;
+    height:50px;
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:601px) {
+    .column3 {
+        width:33.33%;
+        height:100px;
+        float: left;
+        margin-bottom:0;
+    }
+}
+
+#fbikonfoot {
+    height:30px;
+    margin: 10px;
+    margin-left: 20px;
+    float:left;
+}
+
+@media only screen and (min-width:601px) {
+    #fbikonfoot {
+        float:none;
+        margin:auto;
+        display:block;
+        height:35px;
+    }
+}
+
+#footertext {
+    text-align: left;
+    font-size:16px;
+    padding:15px;
+    margin-top:0px;
+    font-weight:100;
+}
+
+@media only screen and (min-width:601px) {
+    #footertext {
+        padding-left:30%;
+    }
 }
 
 /* TOPNAV */
 .topnav {
-  overflow: hidden;
-  background-color: #b3c179;
+    overflow: hidden;
+    background-color: #b3c179;
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index: 1;
 }
 
 .topnav a {
@@ -300,6 +460,14 @@ footer {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.topnav a:hover {
+    color: #254805;
+}
+
+#activenav {
+    color: #254805;
 }
 
 .link {
@@ -329,6 +497,7 @@ footer {
     position: absolute;
     right: 0;
     top: 0;
+      padding-left:0px;
   }
   .topnav.responsive a {
         float: none;
@@ -337,17 +506,49 @@ footer {
   }
 }
 
-.burgericon {
-    width:50px;
-    float:right;
-    margin-top:10px;
-}
-
 .logo {
-    width:60px;
+    height:60px;
     padding:0;
     margin:0;
     float:left;
+}
+
+@media screen and (min-width:601px) {
+    .logo {
+        margin-left: 10%;
+        height: 80px;
+    }
+}
+
+.burgericon {
+    width:50px;
+    float:right;
+    margin-top:8px;
+}
+
+.searchikonnav {
+    height:38px;
+    position:absolute;
+    top:27px;
+    right:80px;
+}
+
+@media screen and (min-width:601px) {
+    .searchikonnav {
+        height:50px;
+        top:15%;
+        right:2%;
+    }
+}
+
+#searchoverlay {
+    position: fixed;
+    display:none;
+    width:100%;
+    height:87%;
+    bottom:0;
+    background-color: #b3c179;
+    z-index: 1;
 }
 
 #indholdnav {
@@ -358,7 +559,7 @@ footer {
 @media screen and (min-width:601px) {
     #indholdnav {
         margin-top:30px;
-        margin-left:10%;
+        margin-left:30%;
     }
 }
 
@@ -371,3 +572,434 @@ footer {
         margin-bottom: 0px;
     }
 }
+
+/* SØGEFUNKTION */
+
+#searchInput {
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+    margin:auto;
+    display:block;
+}
+
+#searchUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#searchUL li a {
+    width:90%;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* KALENDER */
+
+#h1kal {
+    margin-top:120px;
+    margin-bottom:30px;
+}
+
+@media screen and (min-width:601px) {
+    #h1kal {
+        margin-top:11%;
+    }
+}
+
+#calendar-container {
+    width:100%;
+    border: 2px solid #333333;
+    display:block;
+    margin:auto;
+    margin-top:20px;
+    list-style-type: none;
+    background-color: #f3bf50;
+}
+
+@media screen and (min-width:601px) {
+    #calendar-container {
+        width:300px;
+        float:right;
+        margin-right:0;
+    }
+}
+
+.month {
+    width:100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.month ul {
+    margin-top:20;
+    padding:0;
+    list-style-type: none;
+}
+
+.month ul li {
+    font-size:20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .foer {
+    float: left;
+    padding:10px;
+}
+
+.month .naeste {
+    float:right;
+    padding:10px;
+}
+
+.ugedage {
+    margin:0;
+    padding:4px;
+    font-size:15px;
+    border-bottom: 1px solid #333333;
+    color: #ffffff;
+}
+
+.ugedage li {
+    display: inline-block;
+    width:13%;
+    text-align:center;
+}
+
+.dage {
+    padding: 10px 0;
+    margin:0;
+    list-style-type: none;
+    background-color: #ffffff;
+}
+
+.dage li {
+    display: inline-block;
+    width:13%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:15px;
+}
+
+@media screen and (min-width:601px) {
+    .dage li {
+        margin-bottom:15px;
+    }
+}
+
+.addevent {
+    float:right;
+    margin:10px;
+    margin-top:3px;
+    margin-bottom:25px;
+    margin-right:0px;
+}
+
+@media screen and (min-width:601px) {
+    .addevent {
+        margin-top:330px;
+        float:none;
+        text-align: right
+    }
+}
+
+@media only screen and (min-width:601px) {
+    .eventcont {
+        width:25%;
+        float:left;   
+    }
+}
+
+@media only screen and (min-width:601px) {
+    #eventcontmiddle {
+        margin-right: 12.5%;
+        margin-left: 12.5%;
+    }
+}
+
+.contimg-text {
+    position:relative;
+}
+
+.imgkal {
+    width:100%;
+    margin:auto;
+    display:block;
+    margin-bottom:0px;
+}
+
+@media screen and (min-width:601px) {
+    .imgkal {
+        float:left;
+    }
+}
+
+.textevent {
+    background-color: #f3bf50;
+    width:100%;
+    height: 15%;
+    font-weight: bold;
+    color:#ffffff;
+    line-height: 5px;
+}
+
+@media only screen and (min-width:601px) {
+    .textevent {
+        float:left;
+        width:100%;
+        height:45px;
+    }
+}
+
+.h2kal {
+    padding-right:10px;
+    text-align: right;
+    margin-top:0px;
+}
+
+.pkal {
+    margin-top:7px;
+    margin-bottom:7px;
+}
+
+#merebtnkal {
+    float:left;
+    margin-bottom: 25px;
+}
+
+.formkal {
+    margin-top:70px;
+    background-color: #b3c179;
+    padding:10px;
+    color: #ffffff;
+    margin-bottom:20px;
+}
+
+@media only screen and (min-width:601px) {
+    .formkal {
+        margin-top:40%;
+    }
+
+}
+
+.formkal input {
+    width:98%;
+    height:30px;
+    margin-top:5px;
+}
+
+.formkal input[type=submit] {
+    background-color: #254805;
+    color:#ffffff;
+    width:170px;
+    height:50px;
+    font-size: 15px;
+}
+
+.formkal input[type=submit]:hover {
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+/* Om Lunde */
+
+.tekstboks{
+        margin-top: 80px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:601px) {
+video {
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+}
+
+.video2{
+   width: 100%;
+}
+
+.colorboks{
+    height: 160px;
+    background-color: #b3c179;
+}
+
+.lundesudvikling{
+    text-align: center;
+}
+
+@media screen and (min-width:601px) {
+.tekstboks{
+        margin-top: 120px;
+}
+    
+.tekstboks1{
+    margin-top: 90px;
+}
+    
+.video2{
+    float: right;
+    width: 50%; 
+}
+
+.colorboks{
+    margin-top: 50px;
+    height: 400px;
+    background-color: #b3c179;
+}
+
+.lundesudvikling{
+    text-align: center;
+}
+}
+
+/* Overlay*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b3c179;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.overlayContent {
+    position: relative;
+    top: 100px;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.overlay a {
+    padding-left: 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #254805;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    font-size: 50px;
+    cursor: pointer;
+    float: right;
+}
+
+.navText {
+    font-size: 20px;
+    color: #4C4D4F;
+    padding-bottom: 8px;
+}
+
+.kalenderboks{
+    width: 40px;
+    height: 40px;
+    background-color: #254805;
+    float: right;
+}
+
+.forside{
+    width: 21px;
+    float: left;
+    padding-right: 25px;
+    padding-left: 5px;
+}
+
+/*Modal*/
+
+/* Bagom Modalen */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Indhold */
+.modal-content {
+  background-color: #ffffff;
+  margin:auto;
+  padding: 20px;
+  width: 90%;
+    height: 100%;
+}
+
+@media screen and (min-width:601px) {
+.modal-content {
+  background-color: #ffffff;
+  margin-right: 0px;
+  margin-left: 60%;
+  padding: 20px;
+  width: 40%;
+  height: 100%;
+}
+}
+
+.fodselsdage{
+    margin-left: 30px;
+}
+
+.aktiviteter{
+    margin-left: 30px;
+}
+
+.flag{
+    width: 6%;
+    height: 6%;
+}
+
+/* Luk modal knap */
+.close {
+  color: #333333;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+@media screen and (min-width:601px) {
+.close {
+  color: #333333;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}    
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modalkal{
+    float: right;
+    background-color: #254805;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
