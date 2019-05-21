@@ -153,6 +153,14 @@ h3 {
     font-size: 18px;
 }
 
+h4 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 7px;
+    font-weight: 100
+}
+
+
 p {
     text-align: left;
     font-size: 15px;
@@ -256,6 +264,55 @@ p {
 .merebtn:hover {
     background-color: #254805;
     cursor:pointer;
+    color: #ffffff;
+}
+
+#nulstilbtn {
+    position: relative;
+    margin: 0;
+    width: 125px;
+    height: 30px;
+    padding-bottom: 3px;
+    line-height:20px;
+    font-size: 15px;
+    border: 3px solid #254805;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#filterbtn {
+    margin-top: 100px;
+    border: 1px solid #254805;
+    color: #254805;
+    width: 190px;
+    height: 40px;
+    padding-bottom: 3px;
+    background-color: #ffffff;
+}
+
+#filterbtn img{
+    width: 28px;
+    margin: 5px;;
+    float: left;
+}
+
+#filterbtn h4{
+    margin-top: 9px;
+}
+
+#filterbtn3 {
+    position: relative;
+    top: 10px;
+    left: 60px;
+    border: 1px solid #333333;
+    color: #ffffff;
+    width: 180px;
+    height: 40px;
+    padding-top: 3px;
+    background-color: #254805;
+}
+
+#filterbtn3 a {
     color: #ffffff;
 }
 
@@ -800,4 +857,235 @@ footer {
 
 .formkal input[type=submit]:hover {
     border: 2px solid #ffffff;
+}
+
+/* Kasser */
+
+.first {
+         width: 100%;
+         height: 320px;
+         position: relative;
+         border: 1px solid #333333;
+         margin: 0 auto;
+         margin-top: 10px;
+         overflow: hidden;
+       }
+
+.first .second {
+         position: absolute;
+         width: 100%;
+         height: 200px;
+         left: 0%;
+         top: 0%;
+         background-size: cover;
+         border-right: 1px solid #333333;
+         border-bottom: 1px solid #333333;
+         overflow: hidden;
+       }
+
+.first .third {
+         position: absolute;
+         width: 24%;
+         height: 32px;
+         left: 0%;
+         top: 63%;
+         border-bottom: 1px solid #333333;
+}
+
+.first .fourth {
+         position: absolute;
+         width: 22%;
+         height: 32px;
+         left: 24%;
+         top: 63%;
+         border-bottom: 1px solid #333333;
+         border-left: 1px solid #333333;
+}
+
+.first .five {
+         position: absolute;
+         width: 24%;
+         height: 32px;
+         left: 46%;
+         top: 63%;
+         border-bottom: 1px solid #333333;
+         border-left: 1px solid #333333;
+}
+
+.first .six {
+         position: absolute;
+         width: 30%;
+         height: 32px;
+         left: 70%;
+         top: 63%;
+         border-bottom: 1px solid #333333;
+         border-left: 1px solid #333333;
+}
+
+.first .seven {
+         position: absolute;
+         width: 100%;
+         height: 118px;
+         left: 4%;
+         top: 77%;
+}
+
+.h3bolig {
+    margin: 1px;
+    color: #254805;
+}
+
+.pbolig {
+    margin: 3px;
+}
+
+#boligfirst {
+    margin-top: 12px;
+}
+
+#boligsidste {
+    margin-bottom: 10px;
+}
+
+#boligimg1 {
+    background-image: url(../img/COLOURBOX15499773.JPG);    
+}
+
+#boligimg2 {
+    background-image: url(../img/COLOURBOX4051703.jpg)
+}
+
+/* Modalbolig */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* boligfilter*/
+
+.filterbox {
+    width: 100%;
+    height: 130px;
+    border: 1px solid black;
+    margin: 10px auto;
+    background-color: #e3e3e3;
+}
+
+#filterboxfirst {
+    margin-top: 40px;
+    height: 100px;
+}
+
+.filtercheck {
+    margin-left: 10px;
+    margin-bottom: 12px;
+}
+
+#filterboxlast .h3filter {
+    text-align: left;
+}
+
+#pmin {
+    float: left;
+    margin-left: 10px;
+    padding-right: 205px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#pmax {
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.h3filter {
+    margin: 10px;
+}
+
+.pfilter {
+    margin: 10px;
+}
+
+.pvalue {
+    margin: 5px;
+    text-align: center;
+}
+/* Slider */
+
+.slidecontainer {
+  width: 100%;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 98%;
+  height: 20px;
+  border-radius: 5px; 
+  background: #d5d5d5;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;
+}
+
+/* The slider handle */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px; 
+  background: #254805;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px; 
+  background: #254805;
+  cursor: pointer;
 }
