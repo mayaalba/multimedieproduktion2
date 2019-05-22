@@ -8,29 +8,120 @@
   <link rel="stylesheet" href="css/lunde.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="js/lunde.js" defer></script>
 </head>
 
 <body>
-  
+    
+    <nav class="topnav" id="myTopnav">
+            <a href="#hjem">
+                <img src="img/logo4.png" class="logo" alt="lundebylogo">
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="img/burgermenu-01.png" class="burgericon">
+            </a>
+            <img src="img/search.png" class="searchikonnav" alt="søgeikon">
+            <a href="#" id="indholdnav" class="link">Forside</a>
+            <a href="#" class="link">Om Lunde</a>
+            <a href="#" class="link">Boligoverblik</a>
+            <a href="#" class="link">Kalender</a>
+            <a href="#" class="link" id="navnederst">Facebook</a>
+            
+        </nav>
+
+<main>
+<div class="sidefilter">
+            <div class="filterbox" id="filterboxfirst">
+      <h3 class="h3filter">Ejendomstype</h3><p class="pfilter">Villa, Lejlighed, Familievenlig ejendom, Tæt på grønne områder</p></div>
+      <div class="filterbox"><h3 class="h3filter">Pris</h3>
+         <div class="slidecontainer">
+             <p id="pmin">0kr</p><p id="pmax">5 mio kr</p>
+             <input type="range" min="1" max="5000000" value="2500000" class="slider" id="myRange">
+            <p class="pvalue">Op til: <span id="demo"></span></p>
+          </div>
+      </div>
+      <div class="filterbox" id="filterboxlast">
+          <h3 class="h3filter">Antal værelser</h3>
+            <input type="checkbox" class="filtercheck" name="room1" value="1 værelse"> 1 værelse<br>
+            <input type="checkbox" class="filtercheck" name="room2" value="3 værelser"> 2 værelser<br>
+            <input type="checkbox" class="filtercheck" name="room3" value="3 værelser" checked> 3 værelser<br>
+      </div>
+      <div class="merebtn" id="nulstilbtn"><h4>Nulstil søgning</h4></div>
+      <div id="filterbtn3"><a href="boligoverblik.html"><h4>Søg bolig</h4></a></div>
+        </div>    
+    <button id="filterbtn"><img src="img/filterikon1.png" alt="filter ikon"><h4>Filtrer din søgning</h4></button>
+
+<!-- The Modal -->
+<div id="boligmodal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <div class="filterbox" id="filterboxfirst2">
+      <h3 class="h3filter">Ejendomstype</h3><p class="pfilter">Villa, Lejlighed, Familievenlig ejendom, Tæt på grønne områder</p></div>
+      <div class="filterbox"><h3 class="h3filter">Pris</h3>
+         <div class="slidecontainer">
+             <p id="pmin2">0kr</p><p id="pmax2">5 mio kr</p>
+             <input type="range" min="1" max="5000000" value="2500000" class="slider" id="myRange">
+          </div>
+      </div>
+      <div class="filterbox" id="filterboxlast2">
+          <h3 class="h3filter">Antal værelser</h3>
+            <input type="checkbox" class="filtercheck" name="room1" value="1 værelse"> 1 værelse<br>
+            <input type="checkbox" class="filtercheck" name="room2" value="3 værelser"> 2 værelser<br>
+            <input type="checkbox" class="filtercheck" name="room3" value="3 værelser" checked> 3 værelser<br>
+      </div>
+      <div class="merebtn" id="nulstilbtn2"><h4>Nulstil søgning</h4></div>
+      <div id="2filterbtn3"><a href="boligoverblik.html"><h4>Søg bolig</h4></a></div>
+  </div>
+
+</div>
+    
 <!-- Kasse 1 -->
-    <div class="first">
-    <div class="second"></div>
-      <div class="third"><h4>125 km<sup>2</sup></h4></div>
+    <div class="first" id="boligfirst">
+    <div class="second" id="boligimg1"></div>
+      <div class="third"><h4>125 km²</h4></div>
         <div class="fourth"><h4>4 rum</h4></div>
-          <div class="five"><h4><i class="far fa-lightbulb"></i> C</h4></div>
-            <div class="six"><h4>1.200.000 kr.</h4></div>
-            <div class="seven"><h3>bolig til salg</h3><p>et eller andet i nørre nebel</p></div>
+          <div class="five"><h4>Energi B</h4></div>
+            <div class="six"><h4>1.032.164 kr.</h4></div>
+                <div class="seven"><h3 class="h3bolig">Skøn andelsbolig beliggende i særdeles børnevenligt kvarter</h3><p class="pbolig">Skøn andelsbolig beliggende på en stille og rolig vej i et særdeles børnevenligt kvarter, hvor der er kort afstand til alle hverdagens fornødenheder. Boligen er holdt i pæn stand og byder på en god planløsning og flot energimærke. Boligen indeholder: En rigtig fin og indbydende entré med plads til overtøjet...</p></div>
+                    <div class="eight"><h4>Se bolig hos mægler</h4></div>
   </div>
     
 <!-- Kasse 2 -->
-    <div class="first">
-    <div class="second"></div>
-      <div class="third"><h4>125 km<sup>2</sup></h4></div>
-        <div class="fourth"><h4>4 rum</h4></div>
-          <div class="five"><h4><i class="far fa-lightbulb"></i> C</h4></div>
+    <div class="first" id="boligsidste">
+    <div class="second" id="boligimg2"></div>
+      <div class="third"><h4>192 km²</h4></div>
+        <div class="fourth"><h4>7/4 rum</h4></div>
+          <div class="five"><h4>Energi C</h4></div>
             <div class="six"><h4>1.200.000 kr.</h4></div>
-            <div class="seven"><h3>bolig til salg</h3><p>et eller andet i nørre nebel</p></div>
+                <div class="seven"><h3 class="h3bolig">Stor garage og muligheder for den kreative - plads til flere generationer</h3><p class="pbolig">Omkranset af grønne marker ligger denne store bolig. Boligen rummer 192 m2. Boligen byder på 2 badeværelser, rummeligt køkken, 2 stuer, 5 værelser samt kontor fordelt på stueetage samt 1. sal. Der er med andre ord plads til den store familie eller flere generationer.</p></div>
+                    <div class="eight"><h4>Se bolig hos mægler</h4></div>
   </div>
-</body>
+    
+        </main>
+    
+                <footer>
+            <div class="column1">
+                <img src="img/mailikon.png" alt="mail" id="mailikonfoot">
+                <p class="hvidp" id="footertext">
+                Send nyheder og info til Pia Secher
+                </p>
+            </div>
+            <div class="column2">
+                <img src="img/mapikon.png" alt="map" id="mapikonfoot">
+                <p class="hvidp" id="footertext">
+                6800 Nr. Nebel - Lunde By
+                </p>
+            </div>
+            <div class="column3">
+                <img src="img/facebookikon.png" class="facebookikon" alt="facebookikon" id="fbikonfoot">
+                <p class="hvidp" id="footertext">
+                Følg os på Facebook
+                </p>
+            </div>
+        </footer>
+
+    </body>
 
 </html>

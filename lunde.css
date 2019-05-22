@@ -3,6 +3,7 @@ body {
     padding:0;
     font-family: 'Opens Sans', sans-serif;
     color: #333333;
+    line-height: 20px;
 }
 
 a {
@@ -10,9 +11,13 @@ a {
     text-decoration: none;
 }
 
+main {
+    width:90%;
+    margin:auto;
+}
+
 a:hover {
     color: #6c8f6d;
-    font-weight:bold;
 }
 
 #h1styleguide {
@@ -125,11 +130,17 @@ a:hover {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 40px;
     margin:10px;
     background-color:#ffffff;
     text-align: left;
     margin:0px;
+}
+
+@media screen and(min-width:601px) {
+    h1 {
+        font-size:60px;
+    }
 }
 
 h2 {
@@ -142,8 +153,17 @@ h3 {
     font-size: 18px;
 }
 
+h4 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 7px;
+    font-weight: 100
+}
+
+
 p {
     text-align: left;
+    font-size: 15px;
 }
 
 .centerp {
@@ -154,6 +174,12 @@ p {
 .hvidp {
     color:white;
     background-color: #333333;
+}
+
+@media only screen and (min-width:601px) {
+    .hvidp {
+        text-align:center;
+    }
 }
 
 /* IKONER */
@@ -212,19 +238,118 @@ p {
 }
 
 .merebtn {
-    width:150px;
-    height:50px;
+    width:90px;
+    height:30px;
     display:block;
     margin:auto;
     text-align: center;
-    line-height:50px;
-    font-size: 24px;
-    border: 5px solid #6c8f6d;
+    line-height:30px;
+    font-size: 15px;
+    border: 3px solid #254805;
+    font-weight: bold;
+}
+
+@media screen and (min-width:601px) {
+    .merebtn {
+    width:110px;
+    height:35px;
+    display:block;
+    margin:auto;
+    text-align: center;
+    line-height:36px;
+    font-size: 16px;
+}
 }
 
 .merebtn:hover {
-    background-color: #6c8f6d;
+    background-color: #254805;
     cursor:pointer;
+    color: #ffffff;
+}
+
+#nulstilbtn {
+    position: relative;
+    margin: 0;
+    width: 125px;
+    height: 30px;
+    padding-bottom: 3px;
+    line-height:20px;
+    font-size: 15px;
+    border: 3px solid #254805;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#nulstilbtn2 {
+    position: relative;
+    margin: 0;
+    width: 125px;
+    height: 30px;
+    padding-bottom: 3px;
+    line-height:20px;
+    font-size: 15px;
+    border: 3px solid #254805;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (min-width:601px) {
+    #filterbtn {
+        display: none;
+    }
+}
+    
+    
+#filterbtn {
+    margin-top: 100px;
+    border: 1px solid #254805;
+    color: #254805;
+    width: 190px;
+    height: 40px;
+    padding-bottom: 3px;
+    background-color: #ffffff;
+}
+
+#filterbtn img{
+    width: 28px;
+    margin: 5px;;
+    float: left;
+}
+
+#filterbtn h4{
+    margin-top: 9px;
+}
+
+#filterbtn3 {
+    position: relative;
+    top: 10px;
+    left: 60px;
+    border: 1px solid #333333;
+    color: #ffffff;
+    width: 180px;
+    height: 40px;
+    padding-top: 3px;
+    background-color: #254805;
+}
+
+#filterbtn3 a {
+    color: #ffffff;
+}
+
+#2filterbtn3 {
+    position: relative;
+    top: 10px;
+    left: 60px;
+    border: 1px solid #333333;
+    color: #ffffff;
+    width: 180px;
+    height: 40px;
+    padding-top: 3px;
+    background-color: #254805;
+}
+
+#2filterbtn3 a {
+    color: #ffffff;
 }
 
 /*BILLEDER*/
@@ -281,15 +406,138 @@ p {
 
 footer {
     width:100%;
-    height:125px;
     background-color: #333333;
     font-size: 15px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width:601px) {
+    footer {
+        height:100px;
+    }
+}
+
+.column1 {
+    width:100%;
+    height:50px;
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:601px) {
+    .column1 {
+        width:33.33%;
+        height:20%;
+        float:left;
+        margin-bottom:0;
+        height:100px;
+        text-align:center;
+    }
+}
+
+#mailikonfoot {
+    height:20px;
+    margin:10px;
+    margin-left:20px;
+    margin-top:15px;
+    float:left;
+}
+
+@media only screen and (min-width:601px) {
+    #mailikonfoot {
+        float:none;
+        margin:auto;
+        display:block;
+        height:35px;
+    }
+}
+
+.column2 {
+    width:100%;
+    height:50px;
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:601px) {
+    .column2 {
+        width:33.33%;
+        float:left;
+        margin-bottom:0;
+        height:100px;
+    }
+}
+
+#mapikonfoot {
+    height:35px;
+    margin:10px;
+    margin-left: 26px;
+    float: left;
+}
+
+@media only screen and (min-width:601px) {
+    #mapikonfoot {
+        float:none;
+        margin:auto;
+        display:block;
+    }
+}
+
+.column3 {
+    width:100%;
+    height:50px;
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:601px) {
+    .column3 {
+        width:33.33%;
+        height:100px;
+        float: left;
+        margin-bottom:0;
+    }
+}
+
+#fbikonfoot {
+    height:30px;
+    margin: 10px;
+    margin-left: 20px;
+    float:left;
+}
+
+@media only screen and (min-width:601px) {
+    #fbikonfoot {
+        float:none;
+        margin:auto;
+        display:block;
+        height:35px;
+    }
+}
+
+#footertext {
+    text-align: left;
+    font-size:16px;
+    padding:15px;
+    margin-top:0px;
+    font-weight:100;
+}
+
+@media only screen and (min-width:601px) {
+    #footertext {
+        padding-left:30%;
+    }
 }
 
 /* TOPNAV */
 .topnav {
-  overflow: hidden;
-  background-color: #b3c179;
+    overflow: hidden;
+    background-color: #b3c179;
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index: 1;
 }
 
 .topnav a {
@@ -300,6 +548,14 @@ footer {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.topnav a:hover {
+    color: #254805;
+}
+
+#activenav {
+    color: #254805;
 }
 
 .link {
@@ -329,6 +585,7 @@ footer {
     position: absolute;
     right: 0;
     top: 0;
+      padding-left:0px;
   }
   .topnav.responsive a {
         float: none;
@@ -337,17 +594,73 @@ footer {
   }
 }
 
-.burgericon {
-    width:50px;
-    float:right;
-    margin-top:10px;
-}
-
 .logo {
-    width:60px;
+    height:60px;
     padding:0;
     margin:0;
     float:left;
+}
+
+@media screen and (min-width:601px) {
+    .logo {
+        margin-left: 10%;
+        height: 80px;
+    }
+}
+
+.burgericon {
+    width:50px;
+    float:right;
+    margin-top:8px;
+}
+
+.searchikonnav {
+    height:38px;
+    position:absolute;
+    top:27px;
+    right:80px;
+}
+
+@media screen and (min-width:601px) {
+    .searchikonnav {
+        height:50px;
+        top:15%;
+        right:2%;
+    }
+}
+
+#searchoverlay {
+    position: fixed;
+    display:none;
+    width:100%;
+    height:87%;
+    bottom:0;
+    background-color: #b3c179;
+    z-index: 1;
+}
+
+/* SØGEFUNKTION */
+
+#searchInput {
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+    margin:auto;
+    display:block;
+}
+
+#searchUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#searchUL li a {
+    width:90%;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
 }
 
 #indholdnav {
@@ -358,7 +671,7 @@ footer {
 @media screen and (min-width:601px) {
     #indholdnav {
         margin-top:30px;
-        margin-left:10%;
+        margin-left:30%;
     }
 }
 
@@ -369,5 +682,627 @@ footer {
 @media screen and (min-width:601px) {
     #navnnederst {
         margin-bottom: 0px;
+    }
+}
+
+/* KALENDER */
+
+#h1kal {
+    margin-top:120px;
+    margin-bottom:30px;
+}
+
+@media screen and (min-width:601px) {
+    #h1kal {
+        margin-top:11%;
+    }
+}
+
+#calendar-container {
+    width:100%;
+    border: 2px solid #333333;
+    display:block;
+    margin:auto;
+    margin-top:20px;
+    list-style-type: none;
+    background-color: #f3bf50;
+}
+
+@media screen and (min-width:601px) {
+    #calendar-container {
+        width:300px;
+        float:right;
+        margin-right:0;
+    }
+}
+
+.month {
+    width:100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.month ul {
+    margin-top:20;
+    padding:0;
+    list-style-type: none;
+}
+
+.month ul li {
+    font-size:20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .foer {
+    float: left;
+    padding:10px;
+}
+
+.month .naeste {
+    float:right;
+    padding:10px;
+}
+
+.ugedage {
+    margin:0;
+    padding:4px;
+    font-size:15px;
+    border-bottom: 1px solid #333333;
+    color: #ffffff;
+}
+
+.ugedage li {
+    display: inline-block;
+    width:13%;
+    text-align:center;
+}
+
+.dage {
+    padding: 10px 0;
+    margin:0;
+    list-style-type: none;
+    background-color: #ffffff;
+}
+
+.dage li {
+    display: inline-block;
+    width:13%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:15px;
+}
+
+@media screen and (min-width:601px) {
+    .dage li {
+        margin-bottom:15px;
+    }
+}
+
+.addevent {
+    float:right;
+    margin:10px;
+    margin-top:3px;
+    margin-bottom:25px;
+    margin-right:0px;
+}
+
+@media screen and (min-width:601px) {
+    .addevent {
+        margin-top:330px;
+        float:none;
+        text-align: right
+    }
+}
+
+@media only screen and (min-width:601px) {
+    .eventcont {
+        width:25%;
+        float:left;   
+    }
+}
+
+@media only screen and (min-width:601px) {
+    #eventcontmiddle {
+        margin-right: 12.5%;
+        margin-left: 12.5%;
+    }
+}
+
+.contimg-text {
+    position:relative;
+}
+
+.imgkal {
+    width:100%;
+    margin:auto;
+    display:block;
+}
+
+@media screen and (min-width:601px) {
+    .imgkal {
+        float:left;
+    }
+}
+
+.textevent {
+    position:absolute;
+    bottom:0px;
+    background-color: #f3bf50;
+    width:100%;
+    height: 15%;
+    font-weight: bold;
+    color:#ffffff;
+    line-height: 25px;
+}
+
+@media only screen and (min-width:601px) {
+    .textevent {
+        position: absolute;
+        float:none;
+        bottom:-270px;
+        left:40%;
+        width:75%;
+        height:45px;
+    }
+}
+
+.h2kal {
+    padding-right:10px;
+    text-align: right;
+}
+
+.pkal {
+    margin-top:7px;
+    margin-bottom:7px;
+}
+
+#merebtnkal {
+    float:left;
+    margin-bottom: 25px;
+}
+
+.formkal {
+    margin-top:70px;
+    background-color: #b3c179;
+    padding:10px;
+    color: #ffffff;
+    margin-bottom:20px;
+}
+
+@media only screen and (min-width:601px) {
+    .formkal {
+        margin-top:40%;
+    }
+
+}
+
+.formkal input {
+    width:98%;
+    height:30px;
+    margin-top:5px;
+}
+
+.formkal input[type=submit] {
+    background-color: #254805;
+    color:#ffffff;
+    width:170px;
+    height:50px;
+    font-size: 15px;
+}
+
+.formkal input[type=submit]:hover {
+    border: 2px solid #ffffff;
+}
+
+/* Kasser */
+
+.first {
+         width: 100%;
+         height: 330px;
+         position: relative;
+         border: 1px solid #333333;
+         margin: 0 auto;
+         margin-top: 10px;
+         overflow: hidden;
+       }
+
+@media screen and (min-width:601px) {
+        .first {
+         width: 70%;
+         height: 220px;
+         position: relative;
+         top: 110px;
+         border: 1px solid #333333;
+         margin: 0 auto;
+         margin-top: 10px;
+         overflow: hidden;
+       }
+}
+
+.first .second {
+         position: absolute;
+         width: 100%;
+         height: 200px;
+         left: 0%;
+         top: 0%;
+         background-size: cover;
+         border-right: 1px solid #333333;
+         border-bottom: 1px solid #333333;
+         overflow: hidden;
+       }
+
+@media screen and (min-width:601px) {
+        .first .second {
+         position: absolute;
+         width: 32%;
+         height: 220px;
+         left: 0%;
+         top: 0%;
+         background-image: url(../img/istockphoto-936639464-1024x1024.jpg);
+         background-size: cover;
+         border-right: 1px solid black;
+       }
+}
+
+.first .third {
+         position: absolute;
+         width: 24%;
+         height: 32px;
+         left: 0%;
+         top: 61%;
+         border-bottom: 1px solid #333333;
+}
+
+@media screen and (min-width:601px) {
+        .first .third {
+         position: absolute;
+         width: 15%;
+         height: 32px;
+         left: 32%;
+         top: 0%;
+         border-bottom: 1px solid #333333;
+    }
+}
+
+.first .fourth {
+         position: absolute;
+         width: 22%;
+         height: 32px;
+         left: 24%;
+         top: 61%;
+         border-bottom: 1px solid #333333;
+         border-left: 1px solid #333333;
+}
+
+@media screen and (min-width:601px) {
+        .first .fourth {
+         position: absolute;
+         width: 14%;
+         height: 32px;
+         left: 47%;
+         top: 0%;
+         border-bottom: 1px solid #333333;
+         border-left: 1px solid #333333;
+    }
+}
+
+.first .five {
+         position: absolute;
+         width: 24%;
+         height: 32px;
+         left: 46%;
+         top: 61%;
+         border-bottom: 1px solid #333333;
+         border-left: 1px solid #333333;
+}
+
+@media screen and (min-width:601px) {
+        .first .five {
+         position: absolute;
+         width: 17%;
+         height: 32px;
+         left: 61%;
+         top: 0%;
+         border-bottom: 1px solid #333333;
+         border-left: 1px solid #333333;
+    }
+}
+
+.first .six {
+         position: absolute;
+         width: 30%;
+         height: 32px;
+         left: 70%;
+         top: 61%;
+         border-bottom: 1px solid #333333;
+         border-left: 1px solid #333333;
+}
+
+@media screen and (min-width:601px) {
+        .first .six {
+         position: absolute;
+         width: 22%;
+         height: 32px;
+         left: 78%;
+         top: 0%;
+         border-bottom: 1px solid #333333;
+         border-left: 1px solid #333333;
+    }
+}
+
+.first .seven {
+         position: absolute;
+         width: 100%;
+         height: 118px;
+         left: 4%;
+         top: 74%;
+}
+
+@media screen and (min-width:601px) {
+        .first .seven {
+         position: absolute;
+         width: 100%;
+         height: 118px;
+         left: 4%;
+         top: 24%;
+    }
+}
+
+    .first .eight {
+         position: absolute;
+         width: 50%;
+         height: 35px;
+         left: 50%;
+         top: 90%;
+         border-top: 1px solid #254805;
+         border-left: 1px solid #254805;
+         background-color: #254805;
+         color: #ffffff;
+}
+
+@media screen and (min-width:601px) {
+        .first .eight {
+         position: absolute;
+         width: 20%;
+         height: 35px;
+         left: 80%;
+         top: 85%;
+         border-top: 1px solid #254805;
+         border-left: 1px solid #254805;
+         background-color: #254805;
+         color: #ffffff;
+    }
+}
+    
+.h3bolig {
+    margin: 1px;
+    color: #254805;
+}
+
+@media screen and (min-width:601px) {
+        .h3bolig {
+        margin-left: 30%;
+        color: #254805;
+        font-size: 25px;
+    }
+}    
+    
+.pbolig {
+    margin: 3px;
+}
+
+@media screen and (min-width:601px) {
+        .pbolig {
+        margin-left: 30%;
+        margin-top: 10px;
+        color: #254805;
+        width: 65%;
+    }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px){
+        .pbolig{
+        display: none;
+    }
+}
+
+#boligfirst {
+    margin-top: 12px;
+}
+
+#boligsidste {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:601px) {
+        #boligsidste {
+    margin-bottom: 160px;
+    }
+}
+
+#boligimg1 {
+    background-image: url(../img/COLOURBOX15499773.JPG);    
+}
+
+#boligimg2 {
+    background-image: url(../img/COLOURBOX4051703.jpg)
+}
+
+/* Modalbolig */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* boligfilter*/
+
+.filterbox {
+    width: 100%;
+    height: 130px;
+    border: 1px solid black;
+    margin: 10px auto;
+    background-color: #e3e3e3;
+}
+
+#filterboxfirst {
+    margin-top: 40px;
+    height: 100px;
+}
+
+#filterboxfirst2 {
+    margin-top: 40px;
+    height: 100px;
+}
+
+.filtercheck {
+    margin-left: 10px;
+    margin-bottom: 12px;
+}
+
+#filterboxlast .h3filter {
+    text-align: left;
+}
+
+#filterboxlast2 .h3filter {
+    text-align: left;
+}
+
+#pmin {
+    float: left;
+    margin-left: 10px;
+    padding-right: 205px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#pmin2 {
+    float: left;
+    margin-left: 10px;
+    padding-right: 205px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#pmax {
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#pmax2 {
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.h3filter {
+    margin: 10px;
+}
+
+.pfilter {
+    margin: 10px;
+}
+
+.pvalue {
+    margin: 5px;
+    font-size: 14px;
+}
+/* Slider */
+
+.slidecontainer {
+  width: 100%;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 98%;
+  height: 20px;
+  border-radius: 5px; 
+  background: #d5d5d5;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;
+}
+
+/* The slider handle */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px; 
+  background: #254805;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px; 
+  background: #254805;
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px){
+    .sidefilter {
+        display: none;
+    }
+}
+
+/* side filter */
+@media screen and (min-width:601px) {
+    .sidefilter {
+    width:22%;
+    height: 500px;
+    background-color: #ffffff;
+    float: left;
+    position: relative;
+    top: 70px;
+    left: 20px;
     }
 }
