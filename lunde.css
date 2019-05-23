@@ -271,6 +271,8 @@ p {
     font-size: 15px;
     border: 3px solid #254805;
     font-weight: bold;
+    float:left;
+    margin-bottom: 25px;
 }
 
 @media screen and (min-width:601px) {
@@ -292,6 +294,7 @@ p {
 }
 
 #merebtnstyle {
+    float:none;
     margin:auto;
     display:block;
 }
@@ -628,20 +631,6 @@ footer {
     }
 }
 
-#footertext {
-    text-align: left;
-    font-size:16px;
-    padding:15px;
-    margin-top:0px;
-    font-weight:100;
-}
-
-@media only screen and (min-width:601px) {
-    #footertext {
-        padding-left:30%;
-    }
-}
-
 /* FORMS */
 #formcont {
     width:90%;
@@ -745,13 +734,6 @@ footer {
 @media screen and (min-width:601px) {
     #h1kal {
         margin-top:11%;
-    }
-}
-
-@media only screen and (min-width:601px) {
-    #textboxkal {
-        font-size:20px;
-        line-height: 25px;
     }
 }
 
@@ -921,10 +903,6 @@ footer {
     margin-bottom:7px;
 }
 
-#merebtnkal {
-    float:left;
-    margin-bottom: 25px;
-}
 
 #formhead {
     text-align: center;
@@ -1733,6 +1711,10 @@ footer {
 video {
     width: 100%;
     height: 100%;
+}
+
+#lundestimg {
+    width:30%;
 }
 
 @media screen and (min-width:601px) {
