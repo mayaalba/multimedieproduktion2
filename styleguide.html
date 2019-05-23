@@ -21,23 +21,22 @@
                 <li><a href="#side3">Typografi</a></li>
                 <li><a href="#side4">Ikoner</a></li>
                 <li><a href="#side5">Knapper</a></li>
-                <li><a href="#side6">Billeder</a></li>
-                <li><a href="#side7">Navigation</a></li>
-                <li><a href="#side8">Footer</a></li>
-                <li><a href="#side9">Form</a></li>
+                <li><a href="#side6">Navigation</a></li>
+                <li><a href="#side7">Footer</a></li>
+                <li><a href="#side8">Forms</a></li>
             </ul>
         </div>
         
         <div class="side" id="side1">
             <div class="boxline">
-                <h1 id="h1styleguide"><span class="mindre">Styleguide for </span><br> Lunde By</h1>
+                <h1 id="h1style">LUNDE BY<br>STYLEGUIDE</h1>
             </div>
             
         </div>
         
         <div class="side" id="side2">
-            <h1 class="h1styleguide">Farver</h1>
-            <div id="wrap">
+            <h1 class="h1styleguide">FARVER</h1>
+            <div id="contfarve">
                 <div class="farve" id="darkgreen"><p class="hex">#254805</p></div>
                 <div class="farve" id="yellow"><p class="hex">#f3bf50</p></div>
                 <div class="farve" id="lightgreen"><p class="hex">#b3c179</p></div>
@@ -47,7 +46,7 @@
         </div>
         
         <div class="side" id="side3">
-            <h1 class="h1styleguide">Typografi</h1>
+            <h1 class="h1styleguide">TYPOGRAFI</h1>
             <div id="typografi">
                 <h1>Dette er en overskrift</h1>
                 <code>
@@ -82,96 +81,114 @@
         </div>
         
         <div class="side" id="side4">
-            <h1 class="h1styleguide">Ikoner</h1>
+            <h1 class="h1styleguide">IKONER</h1>
             <div id="ikoner">
-                <img src="images/facebook.png" class="facebookikon" alt="facdebookikon">
+                <img src="images/facebookikon.png" class="facebookikon" alt="facebookikon">
                 <br>
                 <code>
-                    &lt;img src="images/facebook.png" class="facebookikon" alt="facebookikon"&gt;
+                    &lt;img src="images/facebookikon.png" class="facebookikon" alt="facebookikon"&gt;
                 </code>
-                <p>Facebook ikon som quick-link til Lunde Bys facebook side.</p>
-                <br><br>
+                <br><br><br>
                 <img src="images/search.png" class="searchikon" alt="søgeikon">
                 <br>
                 <code>
                     &lt;img src="images/search.png" class="searchikon" alt="søgeikon"&gt;
                 </code>
-                <p>Ikon til søgefelt.</p>
-                <br><br>
+                <br><br><br>
                 <img src="images/close.png" class="closeikon" alt="closeikon">
                 <br>
                 <code>
                     &lt;img src="images/close.png" class="closeikon" alt="closeikon"&gt;
                 </code>
-                <p>Ikon til at lukke modal ved klik på nyhedsopslag.</p>
+                <br><br><br>
+                <img src="images/burgermenu-01.png" alt="burgermenu" class="burgericon" id="burgerikonstyle">
+                <br>
+                <code>
+                &lt;img src="images/burgermenu-01.png" alt="burgermenu" class="burgericon"&gt;
+                </code>
+                <br><br><br>
+                <img src="images/filterikon.png" alt="filterikon" class="filterikon">
+                <br>
+                <code>
+                &lt;img src="images/filterikon.png" alt="filterikon" class="filterikon"&gt;
+                </code>
+                <br><br><br>
+                <img src="images/mailikon.png" alt="mailikon" class="mailikon">
+                <br>
+                <code>
+                &lt;img src="images/mailikon.png" alt="mailikon" class="mailikon"&gt;
+                </code>
+                <br><br><br>
+                <img src="images/mapikon.png" alt="mapikon" class="mapikon">
+                <br>
+                <code>
+                &lt;img src="images/mapikon.png" alt="mapikon" class="mapikon"&gt;
+                </code>
             </div>
         </div>
     
         <div class="side" id="side5">
-            <h1 class="h1styleguide">Knapper</h1>
+            <h1 class="h1styleguide">KNAPPER</h1>
             <div class="knapper">
-                <btn class="imagebtn">
-                    Musik på kroen
-                </btn>
-                <br>
-                <code>
-                    &lt;btn class="imagebtn"&gt;Musik på kroen&lt;/btn&gt;
-                </code>
-                <br><br>
-                <btn class="merebtn">
+                <btn class="merebtn" id="merebtnstyle">
                     Læs mere
                 </btn>
                 <br>
                 <code>
                 &lt;btn class="merebtn"&gt;Læs mere&lt;/btn&gt;
                 </code>
+                <br><br><br>
+                <div class="addevent" id="addeventstyle">
+                    <a href="#opretbegivenhed">+ Tilføj begivenhed</a>
+                </div>
+                <code>
+                    &lt;div class="addevent" id="addeventstyle"&gt;
+                    <br>
+                    &lt;a href="#opretbegivenhed"&gt;+ Tilføj begivenhed&lt;/a&gt;
+                    <br>
+                    &lt;/div&gt;
+                </code>
+                <br><br>
+                <input type="submit" value="Indsend begivenhed" class="indsend" id="indsend">
+                <code>
+                    &lt;input type="submit value="Indsend begivenhed" class="indsend" id="indsend&gt;
+                </code>
             </div>
         </div>
         
         <div class="side" id="side6">
-            <h1 class="h1styleguide">Billeder</h1>
-            <div class="billeder">
-                <img src="images/forside.png" class="bigimg" alt="lundebybillede">
-                <br>
-                <code>
-                    &lt;img src="images/forside.png" class="bigimg" alt="lundebybillede"&gt;
-                </code>
-                <br><br>
-                <div class="row">
-                    <img src="images/img1.png" class="column" alt="billede">
-                    <img src="images/img2.png" class="column" alt="billede">
-                    <img src="images/img3.png" class="column" alt="billede">
-                </div>
-                <br>
-                <code>
-                    <br>
-                    &lt;div class="row"&gt;<br>
-                        &lt;img src="images/img1.png" class="column" alt="billede"&gt;
-                    <br>
-                        &lt;img src="images/img2.png" class="column" alt="billede"&gt;
-                    <br>
-                        &lt;img src="images/img3.png" class="column" alt="billede"&gt;
-                    <br>
-                    &lt;/div&gt;
-                </code>
+            <h1 class="h1styleguide">NAVIGATION</h1>
+            <div id="navigationcont">
+                <nav class="topnav" id="myTopnavstyle">
+            <a href="#hjem">
+                <img src="images/logo2.png" class="logo" alt="lundebylogo" id="logostylenav">
+            </a>
+            <img src="images/search.png" class="searchikonnav" alt="søgeikon" onclick="on()">
+            <div id="searchoverlay" onclick="off()">
+                    <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Hvad leder du efter?" title="Type in a name">
+
+                    <ul id="searchUL">
+                    <li><a href="#">Skole</a></li>
+                    <li><a href="#">Kontakt</a></li>
+
+                    <li><a href="#">Om Lunde</a></li>
+                    <li><a href="#">Grønne områder</a></li>
+
+                    <li><a href="#">Naboskab</a></li>
+                    <li><a href="#">Ledige boliger</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    </ul>
             </div>
-        </div>
-        
-        <div class="side" id="side7">
-            <h1 class="h1styleguide">Navigation</h1>
-            <div class="navigation">
-                <nav class="topnav" id="myTopnav">
-                    <a href="#hjem">
-                    <img src="images/logo.png" class="logo" alt="lundebylogo">
-                    </a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <img src="images/burgermenu-01.png" class="burgericon">
-                    </a>
-                    <a href="#home" id="indholdnav" class="link">Forside</a>
-                    <a href="#news" class="link">Om Lunde</a>
-                    <a href="#contact" class="link">Boligoverblik</a>
-                    <a href="#about" class="link" id="navnederst">Kalender</a>
-                </nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="images/burgermenu-01.png" class="burgericon">
+            </a>
+            <a href="#" id="indholdnavstyle" class="link">Forside</a>
+            <a href="#" class="link">Om Lunde</a>
+            <a href="#" class="link">Boligoverblik</a>
+            <a href="#" class="link" id="activenav">Kalender</a>
+            <a href="#" class="link" id="navnederst">Facebook</a>
+            
+        </nav>
                 <br>
                 <code>
                 &lt;nav class="topnav" id="myTopnav"&gt;
@@ -190,44 +207,185 @@
                     <br>
                     &lt;a href="home" id="indholdnav" class="link"&gt;Forside&lt;/a&gt;
                     <br>
-                    &lt;a href="#news" class="link"&gt;Om Lunde&lt;/&gt;
+                    &lt;a href="#news" class="link"&gt;Om Lunde&lt;/a&gt;
                     <br>
                     &lt;a href="#contact" class="link"&gt;Boligoverblik&lt;/a&gt;
                     <br>
-                    &lt;a href="#about" class="link id="navnederst"&gt;Kalender&lt;/a&gt;
+                    &lt;a href="#about" class="link" id="navnederst"&gt;Kalender&lt;/a&gt;
                     <br>
                     &lt;/nav&gt;
+                </code>
+                </div>
+            </div>
+        
+        <div class="side" id="side7">
+            <h1 class="h1styleguide">FOOTER</h1>
+            <div class="footercont">
+                <footer>
+                    <div class="column1">
+                        <img src="images/mailikon.png" alt="mail" id="mailikonfoot">
+                        <p class="hvidp" id="footertextstyle">
+                        Send nyheder og info til Pia Secher
+                        </p>
+                    </div>
+                    <div class="column2">
+                        <img src="images/mapikon.png" alt="map" id="mapikonfoot">
+                        <p class="hvidp" id="footertextstyle">
+                        6800 Nr. Nebel - Lunde By
+                        </p>
+                    </div>
+                    <div class="column3">
+                        <img src="images/facebookikon.png" class="facebookikon" alt="facebookikon" id="fbikonfoot">
+                        <p class="hvidp" id="footertextstyle">
+                        Følg os på Facebook
+                        </p>
+                    </div>
+                </footer>
+                <code>
+                     &lt;footer&gt;
+                    <br>
+                    &lt;div class="column1"&gt;
+                    <br>
+                        &lt;img src="images/mailikon.png" alt="mail" id="mailikonfoot"&gt;
+                    <br>
+                        &lt;p class="hvidp" id="footertextstyle"&gt;
+                    <br>
+                        Send nyheder og info til Pia Secher
+                    <br>
+                        &lt;/p&gt;
+                    <br>
+                    &lt;/div&gt;
+                    <br>
+                    &lt;div class="column2"&gt;
+                    <br>
+                        &lt;img src="images/mapikon.png" alt="map" id="mapikonfoot"&gt;
+                    <br>
+                        &lt;p class="hvidp" id="footertextstyle"&gt;
+                    <br>
+                        6800 Nr. Nebel - Lunde By
+                    <br>
+                        &lt;/p&gt;
+                    <br>
+                    &lt;/div&gt;
+                    <br>
+                    &lt;div class="column3"&gt;
+                    <br>
+                        &lt;img src="images/facebookikon.png" class="facebookikon" alt="facebookikon" id="fbikonfoot"&gt;
+                    <br>
+                        &lt;p class="hvidp" id="footertextstyle"&gt;
+                    <br>
+                        Følg os på Facebook
+                    <br>
+                        &lt;/p&gt;
+                    <br>
+                    &lt;/div&gt;
+                    <br>
+                &lt;/footer&gt;
                 </code>
             </div>
         </div>
         
         <div class="side" id="side8">
-            <h1 class="h1styleguide">Footer</h1>
-            <div class="footer">
-                <footer>
-                    <div class="column">
-                        <p class="hvidp">
-                        Send nyheder og aktiviteter til piasechersnews@gmail.com
-                        </p>
-                    </div>
-                    <div class="column">
-                        <p class="hvidp">
-                        6800 Nr. Nebel
-                        <br>
-                        Lunde By
-                        </p>
-                    </div>
-                    <div class="column">
-                        <p class="hvidp">
-                        Følg os på Facebook
-                        </p>
-                    </div>
-                </footer>
+            <h1 class="h1styleguide">FORMS</h1>
+            <div id="formcont">
+                
+                <div class="formkal" id="opretbegivenhedstyle">
+                <p>Kunne du tænke dig at oprette en begivenhed i kalenderen? Så udfyld felterne herunder!</p>
+                <form  class="formkal1" id="formkal2style">
+                    <p>Lidt om dig...</p>
+                    *Navn:<br>
+                    <input type="text" name="firstandlastname" required>
+                    <br><br>
+                    *E-mail:<br>
+                    <input type="text" name="email" required>
+                    <br><br>
+                    Telefonnummer:
+                    <br>
+                    <input type="text" name="phonenumber">
+                
+                </form>
+                <form class="formkal2" id="formkal2style">
+                    <p>Dit event...</p>
+                    *Navn på begivenhed:
+                    <br>
+                    <input type="text" name="eventname" required>
+                    <br><br>
+                    *Begivenhedens lokation:
+                    <br>
+                    <input type="text" name="eventplace" required>
+                    <br><br>
+                    *Kort beskrivelse af begivenhed:
+                    <br>
+                    <input type="text" name="eventdescr" required>
+                    <br><br>
+                    <input type="submit" value="Indsend begivenhed" class="indsend">
+                </form>
+                </div>
+                <code>
+                    &lt;div class="formkal" id="opretbegivenhedstyle"&gt;
+                    <br>
+                &lt;p&gt;Kunne du tænke dig at oprette en begivenhed i kalenderen? Så udfyld felterne herunder!&lt;/p&gt;
+                    <br>
+                &lt;form  class="formkal1" id="formkal2style"&gt;
+                    <br>
+                    &lt;p&gt;Lidt om dig...&lt;/p&gt;
+                    <br>
+                    *Navn:&lt;br&gt;
+                    <br>
+                    &lt;input type="text" name="firstandlastname" required&gt;
+                    <br>
+                    &lt;br&gt;&lt;br&gt;
+                    <br>
+                    *E-mail:&lt;br&gt;
+                    <br>
+                    &lt;input type="text" name="email" required&gt;
+                    <br>
+                    &lt;br&gt;&lt;br&gt;
+                    <br>
+                    Telefonnummer:
+                    <br>
+                    &lt;br&gt;
+                    <br>
+                    &lt;input type="text" name="phonenumber"&gt;
+                <br>
+                &lt;/form&gt;
+                    <br>
+                &lt;form class="formkal2" id="formkal2style"&gt;
+                    <br>
+                    &lt;p&gt;Dit event...&lt;/p&gt;
+                    <br>
+                    *Navn på begivenhed:
+                    <br>
+                    &lt;br&lt;
+                    <br>
+                    &lt;input type="text" name="eventname" required&gt;
+                    <br>
+                    &lt;br&gt;&lt;br&gt;
+                    <br>
+                    *Begivenhedens lokation:
+                    <br>
+                    &lt;br&gt;
+                    <br>
+                    &lt;input type="text" name="eventplace" required&gt;
+                    <br>
+                    &lt;br&gt;&lt;br&gt;
+                    <br>
+                    *Kort beskrivelse af begivenhed:
+                    <br>
+                    &lt;br&gt;
+                    <br>
+                    &lt;input type="text" name="eventdescr" required&gt;
+                    <br>
+                    &lt;br&gt;&lt;br&gt;
+                    <br>
+                    &lt;input type="submit" value="Indsend begivenhed" class="indsend"&gt;
+                    <br>
+                &lt;/form&gt;
+                    <br>
+            &lt;/div&gt;
+                    <br><br><br>
+                </code>
             </div>
-        </div>
-        
-        <div class="side" id="side9">
-            <h1 class="h1styleguide">Form</h1>
         </div>
     
     </body>
