@@ -194,11 +194,13 @@ p {
     color:white;
     background-color: #333333;
     margin-bottom:0px;
+    line-height: 50px;
 }
 
 @media only screen and (min-width:601px) {
     .hvidp {
         text-align:center;
+        line-height: 0px;
     }
 }
 
@@ -1385,6 +1387,7 @@ footer {
         margin-left: 30%;
         color: #254805;
         font-size: 25px;
+            padding-right: 1px;
     }
 }    
     
@@ -1451,7 +1454,8 @@ footer {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
+    height:70%;/* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -1505,7 +1509,6 @@ footer {
 #pmin {
     float: left;
     margin-left: 10px;
-    padding-right: 205px;
     margin-top: 2px;
     margin-bottom: 2px;
 }
@@ -1513,20 +1516,19 @@ footer {
 #pmin2 {
     float: left;
     margin-left: 10px;
-    padding-right: 205px;
     margin-top: 2px;
     margin-bottom: 2px;
 }
 
 #pmax {
-    float: left;
+    float: right;
     margin-right: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
 }
 
 #pmax2 {
-    float: left;
+    float: right;
     margin-right: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -1662,13 +1664,10 @@ footer {
 
 #filterbtn3 {
     position: relative;
-    top: 10px;
-    left: 60px;
+    margin-left:5px;
     border: 1px solid #333333;
     color: #ffffff;
-    width: 180px;
-    height: 40px;
-    padding-top: 3px;
+    width:40%;
     background-color: #254805;
 }
 
@@ -1708,23 +1707,22 @@ footer {
     color: #254805;
 }
 
-video {
-    width: 100%;
-    height: 100%;
+#videolunde {
+    width:100%;
+    height:200px;;
+}
+
+@media only screen and (min-width:601px) {
+    #videolunde {
+        width:50%;
+        height:350px;
+        float:right;
+        margin-left: 10px;
+    }
 }
 
 #lundestimg {
     width:30%;
-}
-
-@media screen and (min-width:601px) {
-video {
-    width: 40%;
-    height: 50%;
-    float: right;
-    margin-top: 0px;
-    margin-left: 30px;
-}
 }
 
 .sammenhold{
@@ -1733,10 +1731,10 @@ video {
 
 @media screen and (min-width:601px) {
 .sammenhold{
-    float: right;
-    width: 40%; 
-    margin-top: 0px;
-    margin-left: 20px;
+    float:left;
+    width: 50%; 
+    margin-top: 10px;
+    margin-left: 0px;
     margin-right: 0px;
 }    
 }
@@ -1760,7 +1758,7 @@ video {
 }
 
 .colorboks{
-    margin-top: 50px;
+    margin-top: 27%;;
     height: 400px;
     background-color: #b3c179;
 }
@@ -1768,4 +1766,12 @@ video {
 .lundesudvikling{
     text-align: center;
 }
+}
+
+@media only screen and (min-width:601px) {
+    #omlundepbottom {
+        display:block;
+        width:50%;
+        float:left;
+    }
 }
